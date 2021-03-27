@@ -3,7 +3,6 @@
 // CSS animations and power of SASS
 // link https://glennmccomb.com/articles/creating-smooth-sequential-animations-with-sass/
 
-
 @keyframes rotate
   0%
     transform: rotate(0)
@@ -12,18 +11,38 @@
   100%
     transform: rotate(180deg)
 
+
+
+// category variables
+
+$box-width: 200px
+$box-height: $box-width * 9/16
+
+// link https://coolors.co/292f36-4ecdc4-f7fff7-ff6b6b-ffe66d
+$gunmetal: #292f36ff
+$medium-turquoise: #4ecdc4ff
+$mint-cream: #f7fff7ff
+$bittersweet: #ff6b6bff
+$naples-yellow: #ffe66dff
+
+
+
+
+// category style
+  
 body
   margin: 0
   font-family: Arial, Helvetica, sans-serif
   height: 100vh
+  background: linear-gradient(60deg, $medium-turquoise, $mint-cream)
 
 .box
   display: inline-block
   position: absolute
   left: 50%
   top: 50%
-  margin: -50px -50px
-  background-color: red
-  width: 100px
-  height: 100px
-  animation: rotate 1s infinite
+  margin: #{-$box-height/2} #{-$box-width/2}
+  background-color: $bittersweet
+  width: $box-width
+  height: $box-height
+  animation: rotate 2s infinite
