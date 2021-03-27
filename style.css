@@ -40,10 +40,10 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -56.25px -100px;
+  margin: -100px -100px;
   background-color: #ff6b6bff;
   width: 200px;
-  height: 112.5px;
+  height: 200px;
   -webkit-animation: rotate 2s infinite;
           animation: rotate 2s infinite;
 }
